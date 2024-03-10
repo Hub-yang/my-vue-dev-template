@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export default defineConfig({
@@ -23,6 +24,9 @@ export default defineConfig({
         './src/composables',
       ],
       vueTemplate: true,
+    }),
+    Components({
+      dts: true,
     }),
   ],
 })
