@@ -8,7 +8,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
@@ -17,15 +19,28 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
     "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "npm:eslint-ts-patch@8.57.0-0",
     "eslint-plugin-format": "^0.1.0",
     "eslint-ts": "0.0.0-empty",
     "eslint-ts-patch": "8.57.0-0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "typescript": "^5.4.2",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-router": "^0.8.4",
     "vite": "^5.1.5",
     "vue-tsc": "^1.8.27"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint --edit $1"
+    }
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
