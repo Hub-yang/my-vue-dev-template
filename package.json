@@ -1,20 +1,31 @@
 {
   "name": "my-dev-template",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "vue": "^3.4.19"
+    "@vueuse/core": "^10.9.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
     "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4",
+    "eslint": "npm:eslint-ts-patch@8.57.0-0",
+    "eslint-plugin-format": "^0.1.0",
+    "eslint-ts": "0.0.0-empty",
+    "eslint-ts-patch": "8.57.0-0",
+    "typescript": "^5.4.2",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-router": "^0.8.4",
+    "vite": "^5.1.5",
     "vue-tsc": "^1.8.27"
   }
 }
