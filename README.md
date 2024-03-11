@@ -1,18 +1,47 @@
-# Vue 3 + TypeScript + Vite
+<h5 align='center'>
+A `quick-start` Vue3 Template
+</h5>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h4 align='center'>
+based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a>
+</h4>
 
-## Recommended IDE Setup
+<br>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Includes
 
-## Type Support For `.vue` Imports in TS
+- [Vue3](https://github.com/vuejs/core)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [Vite](https://github.com/vitejs/vite)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- [Vue Router](https://github.com/vuejs/vue-router)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- [UnoCSS](https://github.com/unocss/unocss)
+
+- [TypeScript](https://github.com/microsoft/TypeScript)
+
+- [`unplugin-vue-router`-基于文件的路由](https://github.com/posva/unplugin-vue-router)
+
+- [`unplugin-auto-import`-配置自动导入](https://github.com/antfu/unplugin-auto-import)
+
+- [`unplugin-vue-components`-配置组件自动加载](https://github.com/antfu/unplugin-vue-components)
+
+- [VueUse-Composition API工具集](https://github.com/antfu/vueuse)
+
+- [pnpm](https://github.com/pnpm/pnpm)
+
+- [antfu-eslint-config](https://github.com/antfu/eslint-config)
+
+- [commitlint](https://github.com/conventional-changelog/commitlint)
+
+<br>
+
+### 克隆模板
+
+推荐使用[degit](https://github.com/Rich-Harris/degit)
+
+```bash
+npx degit Hub-yang/my-vue-dev-template my-dev-app
+cd my-dev-app
+pnpm i # 没有pnpm ？, 先运行: npm install -g pnpm
+```
