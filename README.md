@@ -38,6 +38,10 @@ based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a
 
 ### 克隆模板
 
+```sh
+git clone https://github.com/Hub-yang/my-vue-dev-template.git
+```
+
 推荐使用[degit](https://github.com/Rich-Harris/degit)
 
 ```bash
