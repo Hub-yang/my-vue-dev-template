@@ -1,14 +1,14 @@
-<h5 align='center'>
-A `quick-start` Vue3 Template
-</h5>
-
 <h4 align='center'>
-based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a>
+A `quick-start` Vue3 Template
 </h4>
+
+<h5 align='center'>
+based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a>
+</h5>
 
 <br>
 
-## Includes
+## Include
 
 - [Vue3](https://github.com/vuejs/core)
 
