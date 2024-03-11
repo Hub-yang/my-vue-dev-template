@@ -8,11 +8,18 @@ function goToArticle() {
 </script>
 
 <template>
-  <button @click="id--">
-    -
-  </button>
-  <a @click="goToArticle">go to article {{ id }}</a>
-  <button @click="id++">
-    +
-  </button>
+  <div flex="~ justify-center items-center" gap-2>
+    <button btn @click="id--">
+      -
+    </button>
+    <a
+      class="cursor-pointer font-bold underline underline-offset-3 decoration-dashed transition-duration-250 transition-property-color hover:color-#646cff"
+      @click="goToArticle"
+    >
+      Go To Article {{ id }}
+    </a>
+    <button btn @click="id++">
+      +
+    </button>
+  </div>
 </template>

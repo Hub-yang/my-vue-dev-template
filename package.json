@@ -1,8 +1,19 @@
 {
-  "name": "my-dev-template",
+  "name": "vue3-dev-template",
   "type": "module",
-  "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@8.11.0",
+  "description": "A `quick-start` Vue3 Template",
+  "author": "Hubery Yang",
+  "license": "MIT",
+  "homepage": "https://github.com/Hub-yang/my-vue-dev-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hub-yang/my-vue-dev-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hub-yang/my-vue-dev-template/issues"
+  },
   "scripts": {
     "dev": "vite --open",
     "build": "vue-tsc && vite build",
@@ -21,6 +32,7 @@
     "@antfu/eslint-config": "^2.8.0",
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
+    "@iconify-json/carbon": "^1.1.31",
     "@unocss/eslint-plugin": "^0.58.5",
     "@unocss/reset": "^0.58.5",
     "@vitejs/plugin-vue": "^5.0.4",
