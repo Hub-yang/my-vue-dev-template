@@ -1,5 +1,5 @@
 <h4 align='center'>
-A `quick-start` Vue3 Template
+🚀A `quick-start` Vue3 Template
 </h4>
 
 <h5 align='center'>
@@ -8,7 +8,7 @@ based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a
 
 <br>
 
-## Include
+## 📦Include
 
 - [Vue3](https://github.com/vuejs/core)
 
@@ -48,4 +48,11 @@ git clone https://github.com/Hub-yang/my-vue-dev-template.git
 npx degit Hub-yang/my-vue-dev-template my-dev-app
 cd my-dev-app
 pnpm i # 没有pnpm ？, 先运行: npm install -g pnpm
+```
+
+### 🔥[自动配置commitlint+husky+lint-staged](https://github.com/Hub-yang/todo-scripts)
+
+```bash
+pnpm install --save-dev @huberyyang/todo-scripts
+npx hubery commitlint-init --clear
 ```
