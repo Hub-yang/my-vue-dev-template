@@ -47,9 +47,11 @@ git clone https://github.com/Hub-yang/my-vue-dev-template.git
 ```bash
 npx degit Hub-yang/my-vue-dev-template my-dev-app
 ```
+
 ```bash
 cd my-dev-app
 ```
+
 ```bash
 pnpm i # 没有pnpm ？, 先运行: npm install -g pnpm
 ```
@@ -59,6 +61,7 @@ pnpm i # 没有pnpm ？, 先运行: npm install -g pnpm
 ```bash
 pnpm install --save-dev @huberyyang/todo-scripts
 ```
+
 ```bash
 npx hubery commitlint-init --clear
 ```
