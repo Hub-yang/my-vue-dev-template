@@ -20,6 +20,8 @@ based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a
 
 - [TypeScript](https://github.com/microsoft/TypeScript)
 
+- [`devtools-next`](https://github.com/vuejs/devtools-next)
+
 - [`unplugin-vue-router`-基于文件的路由](https://github.com/posva/unplugin-vue-router)
 
 - [`unplugin-auto-import`-配置自动导入](https://github.com/antfu/unplugin-auto-import)
