@@ -5,11 +5,13 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import UnoCSS from 'unocss/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   plugins: [
     VueRouter(),
     Vue(),
+    VueDevTools(),
     AutoImport({
       imports: [
         'vue',
