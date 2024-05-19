@@ -5,6 +5,5 @@
         <component :is="Component" />
       </keep-alive>
     </router-view>
-    <the-footer />
   </main>
 </template>
