@@ -2,11 +2,6 @@
 const router = useRouter()
 const id = ref(0)
 
-const obj: anyKey = {
-  name: 'hubery',
-}
-console.log(obj)
-
 function goToArticle() {
   router.push(`/article/${id.value}`)
 }
