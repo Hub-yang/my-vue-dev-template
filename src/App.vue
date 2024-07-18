@@ -5,5 +5,6 @@
         <component :is="Component" />
       </keep-alive>
     </router-view>
+    <BaseFooter />
   </main>
 </template>
