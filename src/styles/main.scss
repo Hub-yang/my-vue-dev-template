@@ -1,0 +1,6 @@
+html {
+  background: $base-color;
+  &.dark{
+    background: #000;
+  }
+}
