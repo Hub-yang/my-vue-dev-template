@@ -57,12 +57,6 @@
     "vite-plugin-vue-devtools": "^7.6.7",
     "vue-tsc": "^2.1.10"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm lint-staged",
-      "commit-msg": "pnpm commitlint --edit $1"
-    }
-  },
   "lint-staged": {
     "*": "eslint . --fix"
   }
