@@ -60,7 +60,7 @@ function toggleCssMode() {
       </button>
     </div>
     <div mt-10 h-fit w="50%">
-      <button w-26 btn @click="toggleCssMode">
+      <button btn w-26 @click="toggleCssMode">
         use {{ cssMode }}
       </button>
       <div bg="#272822" mt-3 rounded-1 p-2 color-white>
