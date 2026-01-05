@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "types": [
       "vite/client",
-      "unplugin-vue-router/client"
+      "unplugin-vue-router/client",
+      "element-plus/global"
     ],
     "allowJs": true,
     "strict": true,
@@ -22,10 +23,16 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
+  "include": [
+    "./typed-router.d.ts",
+    "src/**/*",
+    "types/**/*",
+    "*.d.ts"
+  ],
   "exclude": [
     "dist",
     "node_modules",
-    "eslint.config.js",
+    "eslint.config.ts",
     "commitlint.config.js"
   ]
 }

@@ -2,6 +2,8 @@ import path from 'node:path'
 import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
@@ -21,8 +23,14 @@ export default defineConfig({
     Vue(),
     VueDevTools(),
     svgLoader(),
+    Icons({
+      autoInstall: true,
+    }),
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver(),
+        IconsResolver(),
+      ],
       imports: [
         'vue',
         '@vueuse/core',
@@ -36,7 +44,12 @@ export default defineConfig({
     }),
     Components({
       dts: true,
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver(),
+        IconsResolver({
+          enabledCollections: ['ep'],
+        }),
+      ],
     }),
     UnoCSS(),
   ],

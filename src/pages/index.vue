@@ -31,7 +31,7 @@ const code = computed(() => {
     }
 
     <style scoped lang="scss">
-      .text-overflow {
+      .text-overflow {https://clinyong.gallerycdn.vsassets.io/extensions/clinyong/vscode-css-modules/0.5.4/1746940756078/Microsoft.VisualStudio.Services.Icons.Default
           @include text-overflow-ellipsis();
       }
     </style>
