@@ -22,8 +22,6 @@ based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a
 
 - [`devtools-next`](https://github.com/vuejs/devtools-next)
 
-- [`unplugin-vue-router`-基于文件的路由](https://github.com/posva/unplugin-vue-router)
-
 - [`unplugin-auto-import`-配置自动导入](https://github.com/antfu/unplugin-auto-import)
 
 - [`unplugin-vue-components`-配置组件自动加载](https://github.com/antfu/unplugin-vue-components)

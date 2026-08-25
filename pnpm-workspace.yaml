@@ -1,0 +1,14 @@
+minimumReleaseAgeExclude:
+  - '@types/node@26.3.0'
+  - eslint@10.9.1
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+
+trustPolicyExclude:
+  - chokidar@4.0.3
+  - semver@6.3.1

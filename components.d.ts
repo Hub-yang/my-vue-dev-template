@@ -16,7 +16,6 @@ declare module 'vue' {
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElSpace: typeof import('element-plus/es')['ElSpace']
-    IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpSearch: typeof import('~icons/ep/search')['default']
     IEpShare: typeof import('~icons/ep/share')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

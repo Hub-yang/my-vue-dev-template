@@ -6,20 +6,21 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import svgLoader from 'vite-svg-loader'
+import { VueRouterAutoImports } from 'vue-router/unplugin'
+import VueRouter from 'vue-router/vite'
 
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~': path.resolve(import.meta.dirname, 'src'),
     },
   },
   plugins: [
     VueRouter(),
+    UnoCSS(),
     Vue(),
     VueDevTools(),
     svgLoader(),
@@ -37,10 +38,8 @@ export default defineConfig({
         VueRouterAutoImports,
       ],
       dts: true,
-      dirs: [
-        './src/composables',
-      ],
       vueTemplate: true,
+      dirs: ['./src/composables'],
     }),
     Components({
       dts: true,
@@ -51,7 +50,6 @@ export default defineConfig({
         }),
       ],
     }),
-    UnoCSS(),
   ],
   css: {
     preprocessorOptions: {
@@ -61,19 +59,26 @@ export default defineConfig({
     },
   },
   build: {
-    minify: 'terser', // 默认 esbuild，选择 terser 可能提供更高的压缩率
-    terserOptions: {
-      compress: {
-        drop_console: true, // 压缩后删除 console.log
-        drop_debugger: true, // 压缩后删除 debugger
+    // minify: 'oxc',
+    rolldownOptions: {
+      output: {
+        minify: {
+          compress: {
+            dropConsole: true,
+            dropDebugger: true,
+          },
+        },
       },
     },
-    rollupOptions: {
-      output: { // 手动拆分依赖，可以将常用的第三方库单独打包，减少主文件大小，并且利用缓存
-        manualChunks: {
-          'vue': ['vue'],
-          'vue-router': ['vue-router'],
-        },
+  },
+  server: {
+    open: true,
+    host: true,
+    proxy: {
+      '/api': {
+        target: '',
+        changeOrigin: true,
+        rewrite: path => path.replace('/api', ''),
       },
     },
   },
