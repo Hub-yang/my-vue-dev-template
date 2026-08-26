@@ -59,7 +59,7 @@ export default defineConfig({
     },
   },
   build: {
-    // minify: 'oxc',
+    // minify: 'oxc', // vite8默认
     rolldownOptions: {
       output: {
         minify: {
