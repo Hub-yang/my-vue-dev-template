@@ -1,24 +1,18 @@
 <h4 align='center'>
-🚀A `quick-start` Vue3 Template
+🚀开箱即用、快速启动的vue3模板
 </h4>
 
-<h5 align='center'>
-based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a>
-</h5>
+## 📦技术栈
 
-<br>
+- [`Vue 3`](https://github.com/vuejs/core)
 
-## 📦Include
+- [`Vite 8`](https://github.com/vitejs/vite)
 
-- [Vue3](https://github.com/vuejs/core)
+- [`Vue Router 5`](https://github.com/vuejs/vue-router)
 
-- [Vite](https://github.com/vitejs/vite)
+- [`UnoCSS`](https://github.com/unocss/unocss)
 
-- [Vue Router](https://github.com/vuejs/vue-router)
-
-- [UnoCSS](https://github.com/unocss/unocss)
-
-- [TypeScript](https://github.com/microsoft/TypeScript)
+- [`TypeScript`](https://github.com/microsoft/TypeScript)
 
 - [`devtools-next`](https://github.com/vuejs/devtools-next)
 
@@ -26,17 +20,16 @@ based on <a href="https://github.com/antfu/vitesse-lite">antfu-`vitesse-lite`</a
 
 - [`unplugin-vue-components`-配置组件自动加载](https://github.com/antfu/unplugin-vue-components)
 
-- [VueUse-Composition API工具集](https://github.com/antfu/vueuse)
+- [`VueUse`](https://github.com/antfu/vueuse)
 
-- [pnpm](https://github.com/pnpm/pnpm)
+- [`pnpm`](https://github.com/pnpm/pnpm)
 
-- [antfu-eslint-config](https://github.com/antfu/eslint-config)
+- [`antfu-eslint-config`](https://github.com/antfu/eslint-config)
 
-- [commitlint](https://github.com/conventional-changelog/commitlint)
+- [`commitlint`](https://github.com/conventional-changelog/commitlint)
 
-<br>
 
-### 克隆模板
+## ⚡️使用
 
 ```sh
 git clone https://github.com/Hub-yang/my-vue-dev-template.git
@@ -63,5 +56,5 @@ pnpm install --save-dev @huberyyang/todo-scripts
 ```
 
 ```bash
-npx hubery commitlint-init --clear
+npx hubery commitlint-init
 ```
